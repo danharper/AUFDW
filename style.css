@@ -1,0 +1,106 @@
+html {
+	background: url(img/bg-head.png) repeat-x,
+							url(img/bg-body.png) repeat;
+}
+
+body {
+	margin: 0 auto;
+	width: 840px;
+}
+
+#sitebar {
+	background: #504488;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	padding: 4px 10px;
+}
+
+#sitebar a:link,
+#sitebar a:visited {
+	color: #ada5e3;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px rgba(43,33,112,0.5);
+}
+
+body > header {
+	overflow: hidden;
+}
+
+body > header h2 {
+	color: #fff;
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 32px;
+	font-weight: 600;
+	margin: 25px 0 25px 120px;
+	text-shadow: 1px 1px 1px #2b2170;
+}
+
+body > nav {
+	float: left;
+	margin: 40px 0 0;
+	width: 80px;
+}
+
+body > nav a:link,
+body > nav a:visited {
+	background: grey;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	display: block;
+	height: 80px;
+	margin: 0 0 20px;
+	overflow: hidden;
+	width: 80px;
+}
+
+#main {
+	background: #fff;
+	border-radius: 5px;
+	min-height: 380px;
+	float: left;
+	padding: 40px;
+	width: 680px;
+}
+
+#composemail p {
+	clear: both;
+	/* padding: 10px 0 0; */
+}
+
+#composemail label {
+	background: url(img/icon-person.png) no-repeat center 9px,
+							-webkit-linear-gradient(#f3f3f3, #ececec);
+	border: 1px solid #e4e4e4;
+	border-right: 0;
+	display: block;
+	float: left;
+	height: 39px;
+	text-indent: -9999em;
+	width: 39px;
+}
+
+#composemail input,
+#composemail textarea {
+	background: -webkit-linear-gradient(#fcfcfc, #f4f4f4);
+	border: 1px solid #e4e4e4;
+	float: left;
+	padding: 12px 10px;
+	width: 618px;
+}
+
+#composemail textarea {
+	height: 150px;
+}
+
+#composemail input:focus,
+#composemail textarea:focus {
+	-webkit-transition: border 0.3s;
+	border: 1px solid #c6c6c6;
+	outline: none;
+}
+
+#composemail label[for=message] {
+	background: url(img/icon-pencil.png) no-repeat center 9px,
+							-webkit-linear-gradient(#f3f3f3, #ececec);
+	height: 174px;
+}
