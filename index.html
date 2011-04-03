@@ -16,12 +16,12 @@
 		<h2>Mail</h2>
 	</header>
 
-	<nav>
+	<nav id="sitewide">
 		<ul>
-			<li><a href="#">Profile</a></li>
-			<li><a href="#">Mail</a></li>
-			<li><a href="#">Friends</a></li>
-			<li><a href="#">Classes</a></li>
+			<li><a href="#"><span>Profile</span></a></li>
+			<li><a href="#"><span>Mail</span></a></li>
+			<li><a href="#"><span>Friends</span></a></li>
+			<li><a href="#"><span>Classes</span></a></li>
 		</ul>
 	</nav>
 
@@ -40,10 +40,13 @@ When Time magazine recognized You as its Person of the Year for 2006, acknowledg
 				</textarea>
 			</p>
 		</form>
-
-		<!-- <p>And then there's some more text here&hellip;</p> -->
 	</section>
 	
 
+	<!-- Get jQuery from Google CDN -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"></script>
+	<!-- If CDN fails, use local copy of jQuery -->
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.5.2.min.js"%3E%3C/script%3E'))</script>
+	<script src="js/script.js"></script>
 </body>
 </html>
