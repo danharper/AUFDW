@@ -131,35 +131,25 @@ nav#sitewide li:nth-child(4) a:link {
 	height: 150px;
 }
 
-#composemail input:focus,
-#composemail textarea:focus {
-	-webkit-transition: border 0.3s;
-	outline: none;
-	border: 1px solid #c6c6c6;
-}
-
-#composemail label[for=message] {
+#composemail label.message {
 	background: url(img/icon-pencil.png) no-repeat center 9px,
 							-webkit-linear-gradient(#f3f3f3, #ececec);
 	height: 174px;
 }
 
-/* no fucking idea what i've just done. */
-/* too stoned, but at least git has backups! */
-
-#composemail label[for=to].removeBorder,
-#composemail input[name=to].removeBorder,
-#composemail label[for=to],
-#composemail input[name=to] {
-	border-bottom: none;
+#composemail .to {
+	border-bottom: 0;
 }
 
-#composemail label[for=to].addBorder,
-#composemail input[name=to].addBorder {
-	border: 1px solid #e4e4e4;
+#composemail :focus {
+	outline: none;
 }
 
-#composemail label[for=message].removeBorder,
-#composemail textarea.removeBorder {
-	border-top: none;
+#composemail input:focus, 
+#composemail textarea:focus {
+	border: 1px solid #c6c6c6;
 }
+
+/* Highlight top of textarea to give appearance of highlighting input */
+#composemail input:focus { border-bottom: none; }
+#composemail .highlightTop { border-top: 1px solid #c6c6c6; }
