@@ -10,10 +10,10 @@ nav#sitewide span{color:#fff;font-size:12px;text-align:center;display:block;text
 nav#sitewide li:nth-child(1) span{background:rgba(160, 160, 160, 0.5);}
 nav#sitewide em{position:absolute;top:3px;color:white;font-size:52px;text-align:center;width:80px;}
 nav#sitewide li:nth-child(1) a:link{background:url(../img/tab-profile.png) no-repeat;}
-nav#sitewide li:nth-child(2) a:link{background:url("../img/tab-mail.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
-nav#sitewide li:nth-child(2) a:hover{background:url("../img/tab-mail.png") no-repeat center 16px #aba0dd;}
-nav#sitewide li:nth-child(2).notification a:link{background:url("../img/tab-mail-fade.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
-nav#sitewide li:nth-child(2).notification a:hover{background:url("../img/tab-mail-fade.png") no-repeat center 16px #aba0dd;}
+nav#sitewide li:nth-child(2) a:link{background:url("../img/tab-messages.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
+nav#sitewide li:nth-child(2) a:hover{background:url("../img/tab-messages.png") no-repeat center 16px #aba0dd;}
+nav#sitewide li:nth-child(2).notification a:link{background:url("../img/tab-messages-fade.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
+nav#sitewide li:nth-child(2).notification a:hover{background:url("../img/tab-messages-fade.png") no-repeat center 16px #aba0dd;}
 nav#sitewide li:nth-child(3) a:link{background:url("../img/tab-friends.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
 nav#sitewide li:nth-child(3) a:hover{background:url("../img/tab-friends.png") no-repeat center 16px #aba0dd;}
 nav#sitewide li:nth-child(3).notification a:link{background:url("../img/tab-friends-fade.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
