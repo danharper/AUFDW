@@ -1,6 +1,6 @@
 html {
-	background: url(img/bg-head.png) repeat-x,
-							url(img/bg-body.png) repeat;
+	background: url(../img/bg-head.png) repeat-x,
+							url(../img/bg-body.png) repeat;
 }
 
 body {
@@ -75,21 +75,21 @@ nav#sitewide li:nth-child(1) span {
 }
 
 nav#sitewide li:nth-child(1) a:link {
-	background: url(img/tab-profile.png) no-repeat;
+	background: url(../img/tab-profile.png) no-repeat;
 }
 
 nav#sitewide li:nth-child(2) a:link {
-	background: url(img/tab-mail.png) no-repeat center 16px,
+	background: url(../img/tab-mail.png) no-repeat center 16px,
 							-webkit-linear-gradient(#7d75a1, #aa9fdc);
 }
 
 nav#sitewide li:nth-child(3) a:link {
-	background: url(img/tab-friends.png) no-repeat center 16px,
+	background: url(../img/tab-friends.png) no-repeat center 16px,
 							-webkit-linear-gradient(#7d75a1, #aa9fdc);
 }
 
 nav#sitewide li:nth-child(4) a:link {
-	background: url(img/tab-classes.png) no-repeat center 16px,
+	background: url(../img/tab-classes.png) no-repeat center 16px,
 							-webkit-linear-gradient(#7d75a1, #aa9fdc);
 }
 
@@ -107,7 +107,7 @@ nav#sitewide li:nth-child(4) a:link {
 }
 
 #composemail label {
-	background: url(img/icon-person.png) no-repeat center 9px,
+	background: url(../img/icon-person.png) no-repeat center 9px,
 							-webkit-linear-gradient(#f3f3f3, #ececec);
 	border: 1px solid #e4e4e4;
 	border-right: none;
@@ -116,6 +116,12 @@ nav#sitewide li:nth-child(4) a:link {
 	height: 39px;
 	text-indent: -9999em;
 	width: 39px;
+}
+
+#composemail .message label {
+	background: url(../img/icon-pencil.png) no-repeat center 9px,
+							-webkit-linear-gradient(#f3f3f3, #ececec);
+	height: 174px;
 }
 
 #composemail input,
@@ -131,13 +137,7 @@ nav#sitewide li:nth-child(4) a:link {
 	height: 150px;
 }
 
-#composemail label.message {
-	background: url(img/icon-pencil.png) no-repeat center 9px,
-							-webkit-linear-gradient(#f3f3f3, #ececec);
-	height: 174px;
-}
-
-#composemail .to {
+#composemail .to label, #composemail .to input {
 	border-bottom: 0;
 }
 

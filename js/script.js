@@ -1,7 +1,7 @@
 $(function() {
 
-	var to = $('#composemail input.to');
-	var message = $('#composemail textarea.message');
+	var to = $('#composemail .to input');
+	var message = $('#composemail .message textarea');
 
 	$(to).focus(function() {
 		$(message).addClass('highlightTop');
