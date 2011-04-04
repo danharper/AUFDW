@@ -8,6 +8,11 @@ body {
 	width: 840px;
 }
 
+
+
+/**
+ * Top UPSN Bar
+ */
 #sitebar {
 	background: #504488;
 	border-bottom-left-radius: 3px;
@@ -22,6 +27,11 @@ body {
 	text-shadow: 1px 1px 1px rgba(43,33,112,0.5);
 }
 
+
+
+/**
+ * Header
+ */
 body > header {
 	overflow: hidden;
 }
@@ -35,6 +45,11 @@ body > header h2 {
 	text-shadow: 1px 1px 1px #2b2170;
 }
 
+
+
+/**
+ * Side Tabs
+ */
 nav#sitewide {
 	float: left;
 	margin: 40px 0 0;
@@ -68,10 +83,20 @@ nav#sitewide span {
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
 	background: rgba(123,115,158,0.5);
 	padding: 1px 0;
+	border-bottom-left-radius: 5px;
 }
 
 nav#sitewide li:nth-child(1) span {
 	background: rgba(160,160,160,0.5);
+}
+
+nav#sitewide em {
+	position: absolute;
+	top: 3px;
+	color: white;
+	font-size: 52px;
+	text-align: center;
+	width: 80px;
 }
 
 nav#sitewide li:nth-child(1) a:link {
@@ -83,8 +108,18 @@ nav#sitewide li:nth-child(2) a:link {
 							-webkit-linear-gradient(#7d75a1, #aa9fdc);
 }
 
+nav#sitewide li:nth-child(2).notification a:link {
+	background: url(../img/tab-mail-fade.png) no-repeat center 16px,
+							-webkit-linear-gradient(#7d75a1, #aa9fdc);
+}
+
 nav#sitewide li:nth-child(3) a:link {
 	background: url(../img/tab-friends.png) no-repeat center 16px,
+							-webkit-linear-gradient(#7d75a1, #aa9fdc);
+}
+
+nav#sitewide li:nth-child(3).notification a:link {
+	background: url(../img/tab-friends-fade.png) no-repeat center 16px,
 							-webkit-linear-gradient(#7d75a1, #aa9fdc);
 }
 
@@ -93,6 +128,16 @@ nav#sitewide li:nth-child(4) a:link {
 							-webkit-linear-gradient(#7d75a1, #aa9fdc);
 }
 
+nav#sitewide li:nth-child(4).notification a:link {
+	background: url(../img/tab-classes-fade.png) no-repeat center 16px,
+							-webkit-linear-gradient(#7d75a1, #aa9fdc);
+}
+
+
+
+/**
+ * Main Content
+ */
 #main {
 	background: #fff;
 	border-radius: 5px;
@@ -102,6 +147,11 @@ nav#sitewide li:nth-child(4) a:link {
 	width: 680px;
 }
 
+
+
+/**
+ * Compose Mail Form
+ */
 #composemail p {
 	clear: both;
 }
@@ -118,6 +168,11 @@ nav#sitewide li:nth-child(4) a:link {
 	width: 39px;
 }
 
+#composemail .compose label {
+	background: url(../img/icon-compose.png) no-repeat center 9px,
+							-webkit-linear-gradient(#f3f3f3, #ececec);
+}
+
 #composemail .message label {
 	background: url(../img/icon-pencil.png) no-repeat center 9px,
 							-webkit-linear-gradient(#f3f3f3, #ececec);
@@ -131,6 +186,10 @@ nav#sitewide li:nth-child(4) a:link {
 	float: left;
 	padding: 12px 10px;
 	width: 618px;
+	font-family: "Lucida Grande" sans-serif;
+	color: #6c6c6c;
+	font-size: 11px;
+	line-height: 15px;
 }
 
 #composemail textarea {
