@@ -29,21 +29,22 @@
 
 	<section id="main">
 		<form id="composemail">
-			<p class="compose">
-				<label for="compose">Compose:</label>
-				<input type="text" name="compose" id="compose" value="Send a new message&hellip;">
-			</p>
+			<!-- <p class="compose"> -->
+				<!-- <label for="compose">Compose:</label> -->
+				<!-- <input type="text" name="compose" id="compose" value="Send a new message&hellip;"> -->
+			<!-- </p> -->
 			<p class="to">
 				<label for="to">To:</label>
-				<input type="text" name="to" id="to" value="Dan Harper">
+				<div class="recipients">
+					<div>
+						<!-- <span>Dan Harper <b>x</b></span> <span>Tom Ardern <b>x</b></span> -->
+					</div>
+					<input type="text" name="to" id="to" value="">
+				</div><!-- .recipients -->
 			</p>
 			<p class="message">
 				<label for="message">Message:</label>
-				<textarea name="message" id="message">
-Some super mega awesome shit is going on right now with the UPSN design! Like holy shitballs Batman! Wikipedia's departure from the expert-driven style of the encyclopedia building mode and the large presence of unacademic content have been noted several times.
-
-When Time magazine recognized You as its Person of the Year for 2006, acknowledging the accelerating success of online collaboration and interaction by millions of users around the world, it cited Wikipedia as one of several examples of Web 2.0 services, along with YouTube, MySpace, and Facebook.
-				</textarea>
+				<textarea name="message" id="message"></textarea>
 			</p>
 		</form>
 	</section>

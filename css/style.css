@@ -27,10 +27,16 @@ nav#sitewide li:nth-child(4).notification a:hover{background:url("../img/tab-cla
 #composemail label{background:url(../img/icon-person.png) no-repeat center 9px,-webkit-linear-gradient(#f3f3f3, #ececec);border:1px solid #e4e4e4;border-right:none;display:block;float:left;height:39px;text-indent:-9999em;width:39px;}
 #composemail .compose label{background:url(../img/icon-compose.png) no-repeat center 9px,-webkit-linear-gradient(#f3f3f3, #ececec);}
 #composemail .message label{background:url(../img/icon-pencil.png) no-repeat center 9px,-webkit-linear-gradient(#f3f3f3, #ececec);height:174px;}
-#composemail input,#composemail textarea{background:-webkit-linear-gradient(#fcfcfc, #f4f4f4);border:1px solid #e4e4e4;float:left;padding:12px 10px;width:618px;font-family:"Lucida Grande" sans-serif;color:#6c6c6c;font-size:11px;line-height:15px;}
+#composemail .recipients,#composemail textarea{background:-webkit-linear-gradient(#fcfcfc, #f4f4f4);border:1px solid #e4e4e4;float:left;padding:12px 10px;width:618px;font-family:"Lucida Grande" sans-serif;color:#6c6c6c;font-size:11px;line-height:15px;}
+#composemail input{font-family:"Lucida Grande" sans-serif;color:#6c6c6c;font-size:11px;line-height:15px;background:none;border:none;font-family:"Lucida Grande" sans-serif;margin:-3px 3px 0 0;padding:3px 5px;}
+#composemail .recipients div{display:inline;}
 #composemail textarea{height:150px;}
-#composemail .to label,#composemail .to input{border-bottom:0;}
+#composemail .recipients{padding:10px;cursor:text;}
+#composemail .to label,#composemail .recipients{border-bottom:0;}
+#composemail .recipients span{background:-webkit-linear-gradient(#d1c9f6, #b9aff0);border:1px solid #aba0dd;border-radius:5px;color:#574e94;font-family:"Lucida Grande" sans-serif;margin:0 3px 0 0;padding:4px 5px;cursor:pointer;}
+#composemail .recipients span b{background:#aba0dd;border-radius:20px;color:#aba0dd;margin:0 0 0 3px;padding:0 3px;}
+#composemail .recipients span b:hover{background:#978cc9;color:#978cc9;cursor:pointer;}
 #composemail :focus{outline:none;}
-#composemail input:focus,#composemail textarea:focus{border:1px solid #c6c6c6;}
-#composemail input:focus{border-bottom:none;}
+#composemail textarea:focus{border:1px solid #c6c6c6;}
+#composemail .recipients.highlight{border:1px solid #c6c6c6;border-bottom:none;}
 #composemail .highlightTop{border-top:1px solid #c6c6c6;}
