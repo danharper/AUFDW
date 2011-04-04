@@ -207,6 +207,10 @@ nav#sitewide li:nth-child(4).notification a:hover {
 	width: 39px;
 }
 
+#composemail .compose input {
+	cursor: pointer;
+}
+
 #composemail .compose label {
 	background: url(../img/icon-compose.png) no-repeat center 9px,
 							-webkit-linear-gradient(#f3f3f3, #ececec);
@@ -219,6 +223,7 @@ nav#sitewide li:nth-child(4).notification a:hover {
 }
 
 #composemail .recipients,
+#composemail input#compose,
 #composemail textarea {
 	background: -webkit-linear-gradient(#fcfcfc, #f4f4f4);
 	border: 1px solid #e4e4e4;
@@ -231,7 +236,7 @@ nav#sitewide li:nth-child(4).notification a:hover {
 	line-height: 15px;
 }
 
-#composemail input {
+#composemail input#to {
 	font-family: "Lucida Grande" sans-serif;
 	color: #6c6c6c;
 	font-size: 11px;
