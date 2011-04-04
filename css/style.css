@@ -42,9 +42,13 @@ nav#sitewide li:nth-child(4).notification a:hover{background:url("../img/tab-cla
 #composemail .recipients.highlight{border:1px solid #c6c6c6;border-bottom:none;}
 #composemail .highlightTop{border-top:1px solid #c6c6c6;}
 #messages{list-style:none;margin:30px 0 0;}
-#messages li a:link,#messages li a:visited{background:-webkit-linear-gradient(#fafafa, #f0f0f0);border:1px solid #eaeaea;border-radius:3px;color:#6c6c6c;clear:both;display:block;font-family:"Lucida Grande",sans-serif;font-size:11px;margin:0 0 5px;position:relative;overflow:hidden;text-decoration:none;}
+#messages li a:link,#messages li a:visited{background:-webkit-linear-gradient(#fafafa, #f0f0f0);border:1px solid #eaeaea;border-bottom:none;color:#6c6c6c;clear:both;display:block;font-family:"Lucida Grande",sans-serif;font-size:11px;position:relative;overflow:hidden;text-decoration:none;}
+#messages li:first-child a:link,#messages li:first-child a:visited{border-top-left-radius:3px;border-top-right-radius:3px;}
+#messages li:last-child a:link,#messages li:last-child a:visited{border-bottom:1px solid #eaeaea;border-bottom-left-radius:3px;border-bottom-right-radius:3px;}
+#messages li:first-child img{border-top-left-radius:3px;}
+#messages li:last-child img{border-bottom-left-radius:3px;}
 #messages li a:hover{background:-webkit-linear-gradient(#f0f0f0, #fafafa);}
-#messages img{border-top-left-radius:3px;border-bottom-left-radius:3px;box-shadow:0 0 15px #f0f0f0;float:left;margin:0 10px 0 0;}
+#messages img{box-shadow:0 0 15px #f0f0f0;float:left;margin:0 10px 0 0;}
 #messages cite{color:#4d4199;font-size:14px;font-weight:bold;display:inline-block;margin:10px 0 5px;}
 #messages blockquote{color:#6c6c6c;}
 #messages time{color:#aaa;float:right;position:absolute;right:20px;top:23px;}

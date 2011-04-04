@@ -320,16 +320,36 @@ nav#sitewide li:nth-child(4).notification a:hover {
 #messages li a:visited {
 	background: -webkit-linear-gradient(#fafafa, #f0f0f0);
 	border: 1px solid #eaeaea;
-	border-radius: 3px;
+	border-bottom: none;
 	color: #6c6c6c;
 	clear: both;
 	display: block;
 	font-family: "Lucida Grande", sans-serif;
 	font-size: 11px;
-	margin: 0 0 5px;
 	position: relative;
 	overflow: hidden;
 	text-decoration: none;
+}
+
+#messages li:first-child a:link,
+#messages li:first-child a:visited {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+#messages li:last-child a:link,
+#messages li:last-child a:visited {
+	border-bottom: 1px solid #eaeaea;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+#messages li:first-child img {
+	border-top-left-radius: 3px;
+}
+
+#messages li:last-child img {
+	border-bottom-left-radius: 3px;
 }
 
 #messages li a:hover {
@@ -337,8 +357,8 @@ nav#sitewide li:nth-child(4).notification a:hover {
 }
 
 #messages img {
-	border-top-left-radius: 3px;
-	border-bottom-left-radius: 3px;
+	//border-top-left-radius: 3px;
+	//border-bottom-left-radius: 3px;
 	box-shadow: 0 0 15px #f0f0f0;
 	float: left;
 	margin: 0 10px 0 0;
