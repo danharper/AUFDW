@@ -6,6 +6,7 @@ html {
 body {
 	margin: 0 auto;
 	width: 840px;
+	font-family: "Lucida Grande", sans-serif;
 }
 
 
@@ -251,7 +252,6 @@ nav#sitewide li:nth-child(4).notification a:hover {
 	font-family: "Lucida Grande" sans-serif;
 	margin: -3px 3px 0 0;
 	padding: 3px 5px;
-	//width: 440px;
 }
 
 #composemail .recipients div {
@@ -311,13 +311,13 @@ nav#sitewide li:nth-child(4).notification a:hover {
 }
 #composemail .highlightTop { border-top: 1px solid #c6c6c6; }
 
-#composemail .submit {
+.submit {
 	padding: 10px;
 	text-align: right;
 }
 
-#composemail .submit a:link,
-#composemail .submit a:visited {
+.submit a:link,
+.submit a:visited {
 	color: #999;
 	font-size: 12px;
 	/* margin: 0 10px 0 0; */
@@ -325,12 +325,12 @@ nav#sitewide li:nth-child(4).notification a:hover {
 	text-decoration: none;
 }
 
-#composemail .submit a:hover,
-#composemail .submit a:focus {
+.submit a:hover,
+.submit a:focus {
 	text-decoration: underline;
 }
 
-#composemail .submit input {
+input[type=submit] {
 	background: -webkit-linear-gradient(#d1c9f6, #b9aff0);
 	border: 1px solid #aba0dd;
 	border-radius: 5px;
@@ -338,8 +338,8 @@ nav#sitewide li:nth-child(4).notification a:hover {
 	padding: 5px 10px;
 }
 
-#composemail .submit input:hover,
-#composemail .submit input:focus {
+input[type=submit]:hover,
+input[type=submit]:focus {
 	background: -webkit-linear-gradient(#b9aff0, #d1c9f6);
 }
 
@@ -397,11 +397,24 @@ nav#sitewide li:nth-child(4).notification a:hover {
 }
 
 #messages img {
-	/* border-top-left-radius: 3px; */
-	/* border-bottom-left-radius: 3px; */
 	box-shadow: 0 0 15px #f0f0f0;
 	float: left;
 	margin: 0 10px 0 0;
+}
+
+#messages .newcount {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 60px;
+	text-align: center;
+	color: white;
+	font-size: 52px;
+	text-shadow: 0 0 10px #7d75a1;
+}
+
+#messages img.fadebro {
+	opacity: 0.5;
 }
 
 #messages cite {
@@ -422,4 +435,88 @@ nav#sitewide li:nth-child(4).notification a:hover {
 	position: absolute;
 	right: 20px;
 	top: 23px;
+}
+
+
+
+/**
+ * The News Feed
+ */
+#newsfeed {
+	list-style: none;
+	margin: 0;
+}
+
+#newsfeed li {
+	border-bottom: 1px solid #ddd;
+	clear: both;
+	margin: 0 0 15px;
+	padding: 0 0 15px;
+	overflow: hidden;
+
+	&:last-child {
+		border: none;
+	}
+
+	img {
+		float: left;
+		margin: 0 10px 0 0;
+	}
+
+	cite a:link, cite a:visited {
+		color: #4d4199;
+		display: block;
+		font-weight: bold;
+		margin: 0 0 3px;
+		text-decoration: none;
+	}
+
+	span {
+		color: #999;
+		display: block;
+		font-size: 11px;
+		margin: 4px 0 0;
+	}
+
+	a:link, a:visited {
+		color: #aa9fdc;
+		text-decoration: none;
+	}
+}
+
+#newstatus {
+	margin: 0 0 20px;
+}
+
+#newstatus p {
+	clear: both;
+	overflow: hidden;
+}
+
+#newstatus label {
+	background: url(../img/icon-pencil.png) no-repeat center 9px,
+							-webkit-linear-gradient(#f3f3f3, #ececec);
+	border: 1px solid #e4e4e4;
+	border-right: none;
+	display: block;
+	float: left;
+	height: 39px;
+	text-indent: -9999em;
+	width: 39px;
+}
+
+#newstatus input[type=text] {
+	background: -webkit-linear-gradient(#fcfcfc, #f4f4f4);
+	border: 1px solid #e4e4e4;
+	float: left;
+	padding: 12px 10px;
+	width: 618px;
+	font-family: "Lucida Grande" sans-serif;
+	color: #6c6c6c;
+	font-size: 11px;
+	line-height: 15px;
+
+	&:focus {
+		outline: none;
+	}
 }

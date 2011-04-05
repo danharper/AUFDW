@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en"> 
+<head> 
+	<meta charset="utf-8">
+	<title>UPSN Social Network</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head> 
+<body>
+
+	<header>
+		<section id="sitebar">
+			<h1><a href="/">UPSN</a></h1>
+		</section>
+		<h2>Mail</h2>
+	</header>
+
+	<nav id="sitewide">
+		<ul>
+			<li><a href="index.html"><span>Profile</span></a></li>
+			<li class="notification active"><a href="messages.html"><span>Messages</span><em>2</em></a></li>
+			<!-- <li><a href="messages.html"><span>Messages</span></a></li> -->
+			<!-- <li class="notification"><a href="friends.html"><span>Friends</span><em>9</em></a></li> -->
+			<li><a href="friends.html"><span>Friends</span></a></li>
+			<!-- <li class="notification"><a href="classes.html"><span>Classes</span><em>1</em></a></li> -->
+			<li><a href="classes.html"><span>Classes</span></a></li>
+		</ul>
+	</nav>
+
+	<section id="main">
+		<form id="composemail" class="clearfix">
+			<p class="compose">
+				<label for="compose">Compose:</label>
+				<input type="text" name="compose" id="compose" value="Send a new message&hellip;">
+			</p>
+			<div class="to">
+				<label for="to">To:</label>
+				<div class="recipients">
+					<div>
+						<!-- <span>Dan Harper <b>x</b></span> <span>Tom Ardern <b>x</b></span> -->
+					</div>
+					<input type="text" name="to" id="to" value="">
+				</div><!-- .recipients -->
+			</div>
+			<p class="message">
+				<label for="message">Message:</label>
+				<textarea name="message" id="message"></textarea>
+			</p>
+			<p class="submit">
+				<a href="#">Cancel</a>
+				<input type="submit" value="Send">
+			</p>
+		</form>
+
+		<ol id="messages">
+			<li>
+				<a href="#">
+					<img src="img/profiles/danharper.jpg" alt="The profile picture of Dan Harper" class="fadebro">
+					<span class="newcount">2</span>
+					<cite>Dan Harper</cite>
+					<blockquote>
+						Yep, that's right. I'm talking to myself. So fucking what? :P
+					</blockquote>
+					<time datetime="2011-04-04T23:10:34Z" pubdate>12 seconds ago</time>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<img src="img/profiles/amywebber.jpg" alt="The profile picture of Amy Webber">
+					<cite>Amy Webber</cite>
+					<blockquote>
+						I cooked a plate! :(
+					</blockquote>
+					<time datetime="2011-04-04T23:00Z" pubdate>4 minutes ago</time>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<img src="img/profiles/jakeclements.jpg" alt="The profile picture of Jake Clements">
+					<cite>Jake Clements</cite>
+					<blockquote>
+						Lorem ipsum dolor sit amet.
+					</blockquote>
+					<time datetime="2011-04-04T22:00Z" pubdate>1 hour ago</time>
+				</a>
+			</li>
+		</ol>
+
+	</section>
+	
+
+	<!-- Get jQuery from Google CDN -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"></script>
+	<!-- If CDN fails, use local copy of jQuery -->
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.5.2.min.js"%3E%3C/script%3E'))</script>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -10,6 +10,11 @@ $(function() {
 	var message = $('#composemail .message textarea');
 	var recipients = $('#composemail .recipients span');
 
+	var newStatusMessage = $('#newstatus input[type=text]');
+	var newStatusButtons = $('#newstatus .submit');
+	var newStatusSubmit = $('#newstatus .submit input');
+	var newStatusCancel = $('#newstatus .submit a');
+
 	$(toggleTo).hide();
 	$(toggleMessage).hide();
 	$(toggleSubmit).hide();
@@ -83,6 +88,24 @@ $(function() {
 			$(toggleMessage).slideUp();
 			$(toggleSubmit).slideUp();
 			return false;
+	});
+
+
+	$(newStatusButtons).hide();
+	$(newStatusMessage).focus(function() {
+		$(newStatusButtons).slideDown();
+	});
+
+	$(newStatusMessage).blur(function() {
+		if ($(newStatusMessage).val().length === 0) {
+			$(newStatusButtons).slideUp();
+		}
+	});
+
+	$(newStatusCancel).click(function() {
+		$(newStatusButtons).slideUp();
+		$(newStatusMessage).val('');
+		return false;
 	});
 
 });
