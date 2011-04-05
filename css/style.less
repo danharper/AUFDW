@@ -236,6 +236,11 @@ nav#sitewide li:nth-child(4).notification a:hover {
 	line-height: 15px;
 }
 
+#composemail #compose:hover,
+#composemail #compose:focus {
+	background: -webkit-linear-gradient(#f4f4f4, #fcfcfc);
+}
+
 #composemail input#to {
 	font-family: "Lucida Grande" sans-serif;
 	color: #6c6c6c;
@@ -306,6 +311,38 @@ nav#sitewide li:nth-child(4).notification a:hover {
 }
 #composemail .highlightTop { border-top: 1px solid #c6c6c6; }
 
+#composemail .submit {
+	padding: 10px;
+	text-align: right;
+}
+
+#composemail .submit a:link,
+#composemail .submit a:visited {
+	color: #999;
+	font-size: 12px;
+	/* margin: 0 10px 0 0; */
+	padding: 10px;
+	text-decoration: none;
+}
+
+#composemail .submit a:hover,
+#composemail .submit a:focus {
+	text-decoration: underline;
+}
+
+#composemail .submit input {
+	background: -webkit-linear-gradient(#d1c9f6, #b9aff0);
+	border: 1px solid #aba0dd;
+	border-radius: 5px;
+	color: #574e94;
+	padding: 5px 10px;
+}
+
+#composemail .submit input:hover,
+#composemail .submit input:focus {
+	background: -webkit-linear-gradient(#b9aff0, #d1c9f6);
+}
+
 
 
 /**
@@ -342,6 +379,7 @@ nav#sitewide li:nth-child(4).notification a:hover {
 	border-bottom: 1px solid #eaeaea;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
+	box-shadow: 0 1px 0 #ddd;
 }
 
 #messages li:first-child img {
@@ -352,13 +390,16 @@ nav#sitewide li:nth-child(4).notification a:hover {
 	border-bottom-left-radius: 3px;
 }
 
-#messages li a:hover {
+#messages li a:hover,
+#messages li a:focus {
 	background: -webkit-linear-gradient(#f0f0f0, #fafafa);
+	/* background: #fafafa; */
+	outline: none;
 }
 
 #messages img {
-	//border-top-left-radius: 3px;
-	//border-bottom-left-radius: 3px;
+	/* border-top-left-radius: 3px; */
+	/* border-bottom-left-radius: 3px; */
 	box-shadow: 0 0 15px #f0f0f0;
 	float: left;
 	margin: 0 10px 0 0;

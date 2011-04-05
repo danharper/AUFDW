@@ -4,12 +4,15 @@ $(function() {
 	var toggleCompose = $('#composemail .compose');
 	var toggleTo = $('#composemail .to');
 	var toggleMessage = $('#composemail .message');
+	var toggleSubmit = $('#composemail .submit');
 
 	var to = $('#to');
 	var message = $('#composemail .message textarea');
+	var recipients = $('#composemail .recipients span');
 
 	$(toggleTo).hide();
 	$(toggleMessage).hide();
+	$(toggleSubmit).hide();
 	// $('#composemail .compose').hide(); // swap round later
 
 	$(compose).focus(function() {
@@ -17,6 +20,7 @@ $(function() {
 		$(toggleTo).show();
 		$(to).focus();
 		$(toggleMessage).slideDown();
+		$(toggleSubmit).slideDown();
 	});
 
 	$(to).focus(function() {
@@ -48,7 +52,6 @@ $(function() {
 	$(to).keydown(function(e) {
 		if (e.which === 8) {
 			input = $(to).val();
-			recipients = $('#composemail .recipients span');
 			if (input.length === 0 && recipients.length > 0) {
 				$(recipients).last().remove();
 			}
@@ -66,7 +69,20 @@ $(function() {
 			$(toggleTo).hide();
 			$(toggleCompose).show();
 			$(toggleMessage).slideUp();
+			$(toggleSubmit).slideUp();
 		}
+	});
+
+	// cancel link, clear inputs & slide back up
+	$('#composemail .submit a').click(function() {
+			$(recipients).remove();
+			$(to).val('');
+			$(message).val('');
+			$(toggleTo).hide();
+			$(toggleCompose).show();
+			$(toggleMessage).slideUp();
+			$(toggleSubmit).slideUp();
+			return false;
 	});
 
 });
