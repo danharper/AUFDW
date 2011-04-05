@@ -10,18 +10,18 @@ nav#sitewide span{color:#fff;font-size:12px;text-align:center;display:block;text
 nav#sitewide li:nth-child(1) span{background:rgba(160, 160, 160, 0.5);}
 nav#sitewide em{position:absolute;top:3px;color:white;font-size:52px;text-align:center;width:80px;}
 nav#sitewide li:nth-child(1) a:link{background:url(../img/tab-profile.png) no-repeat;}
-nav#sitewide li:nth-child(2) a:link{background:url("../img/tab-messages.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
-nav#sitewide li:nth-child(2) a:hover{background:url("../img/tab-messages.png") no-repeat center 16px #aba0dd;}
-nav#sitewide li:nth-child(2).notification a:link{background:url("../img/tab-messages-fade.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
-nav#sitewide li:nth-child(2).notification a:hover{background:url("../img/tab-messages-fade.png") no-repeat center 16px #aba0dd;}
-nav#sitewide li:nth-child(3) a:link{background:url("../img/tab-friends.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
-nav#sitewide li:nth-child(3) a:hover{background:url("../img/tab-friends.png") no-repeat center 16px #aba0dd;}
-nav#sitewide li:nth-child(3).notification a:link{background:url("../img/tab-friends-fade.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
-nav#sitewide li:nth-child(3).notification a:hover{background:url("../img/tab-friends-fade.png") no-repeat center 16px #aba0dd;}
-nav#sitewide li:nth-child(4) a:link{background:url("../img/tab-classes.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
-nav#sitewide li:nth-child(4) a:hover{background:url("../img/tab-classes.png") no-repeat center 16px #aba0dd;}
-nav#sitewide li:nth-child(4).notification a:link{background:url("../img/tab-classes-fade.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
-nav#sitewide li:nth-child(4).notification a:hover{background:url("../img/tab-classes-fade.png") no-repeat center 16px #aba0dd;}
+nav#sitewide li:nth-child(2) a:link,nav#sitewide li:nth-child(2) a:visited{background:url("../img/tab-messages.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
+nav#sitewide li:nth-child(2).active a:link,nav#sitewide li:nth-child(2).active a:visited,nav#sitewide li:nth-child(2) a:hover{background:url("../img/tab-messages.png") no-repeat center 16px #aba0dd;}
+nav#sitewide li:nth-child(2).notification a:link,nav#sitewide li:nth-child(2).notification a:visited{background:url("../img/tab-messages-fade.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
+nav#sitewide li:nth-child(2).notification.active a:link,nav#sitewide li:nth-child(2).notification.active a:visited,nav#sitewide li:nth-child(2).notification a:hover{background:url("../img/tab-messages-fade.png") no-repeat center 16px #aba0dd;}
+nav#sitewide li:nth-child(3) a:link,nav#sitewide li:nth-child(3) a:visited{background:url("../img/tab-friends.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
+nav#sitewide li:nth-child(3).active a:link,nav#sitewide li:nth-child(3).active a:visited,nav#sitewide li:nth-child(3) a:hover{background:url("../img/tab-friends.png") no-repeat center 16px #aba0dd;}
+nav#sitewide li:nth-child(3).notification a:link,nav#sitewide li:nth-child(3).notification a:visited{background:url("../img/tab-friends-fade.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
+nav#sitewide li:nth-child(3).notification.active a:link,nav#sitewide li:nth-child(3).notification.active a:visited,nav#sitewide li:nth-child(3).notification a:hover{background:url("../img/tab-friends-fade.png") no-repeat center 16px #aba0dd;}
+nav#sitewide li:nth-child(4) a:link,nav#sitewide li:nth-child(4) a:visited{background:url("../img/tab-classes.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
+nav#sitewide li:nth-child(4).active a:link,nav#sitewide li:nth-child(4).active a:visited,nav#sitewide li:nth-child(4) a:hover{background:url("../img/tab-classes.png") no-repeat center 16px #aba0dd;}
+nav#sitewide li:nth-child(4).notification a:link,nav#sitewide li:nth-child(4).notification a:visited{background:url("../img/tab-classes-fade.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
+nav#sitewide li:nth-child(4).notification.active a:link,nav#sitewide li:nth-child(4).notification.active a:visited,nav#sitewide li:nth-child(4).notification a:hover{background:url("../img/tab-classes-fade.png") no-repeat center 16px #aba0dd;}
 #main{background:#fff;border-radius:5px;min-height:380px;float:left;padding:40px;width:680px;}
 #composemail p{clear:both;}
 #composemail label{background:url(../img/icon-person.png) no-repeat center 9px,-webkit-linear-gradient(#f3f3f3, #ececec);border:1px solid #e4e4e4;border-right:none;display:block;float:left;height:39px;text-indent:-9999em;width:39px;}

@@ -123,52 +123,70 @@ nav#sitewide li:nth-child(1) a:link {
 @tab_classes_fade: "../img/tab-classes-fade.png";
 
 /* Mail tab */
-nav#sitewide li:nth-child(2) a:link {
+nav#sitewide li:nth-child(2) a:link,
+nav#sitewide li:nth-child(2) a:visited {
 	.tab_background(@tab_mail);
 }
 
+nav#sitewide li:nth-child(2).active a:link,
+nav#sitewide li:nth-child(2).active a:visited,
 nav#sitewide li:nth-child(2) a:hover {
 	.tab_hover_background(@tab_mail);
 }
 
-nav#sitewide li:nth-child(2).notification a:link {
+nav#sitewide li:nth-child(2).notification a:link,
+nav#sitewide li:nth-child(2).notification a:visited {
 	.tab_background(@tab_mail_fade);
 }
 
+nav#sitewide li:nth-child(2).notification.active a:link,
+nav#sitewide li:nth-child(2).notification.active a:visited,
 nav#sitewide li:nth-child(2).notification a:hover {
 	.tab_hover_background(@tab_mail_fade);
 }
 
 /* Friends tab */
-nav#sitewide li:nth-child(3) a:link {
+nav#sitewide li:nth-child(3) a:link,
+nav#sitewide li:nth-child(3) a:visited {
 	.tab_background(@tab_friends);
 }
 
+nav#sitewide li:nth-child(3).active a:link,
+nav#sitewide li:nth-child(3).active a:visited,
 nav#sitewide li:nth-child(3) a:hover {
 	.tab_hover_background(@tab_friends);
 }
 
-nav#sitewide li:nth-child(3).notification a:link {
+nav#sitewide li:nth-child(3).notification a:link,
+nav#sitewide li:nth-child(3).notification a:visited {
 	.tab_background(@tab_friends_fade);
 }
 
+nav#sitewide li:nth-child(3).notification.active a:link,
+nav#sitewide li:nth-child(3).notification.active a:visited,
 nav#sitewide li:nth-child(3).notification a:hover {
 	.tab_hover_background(@tab_friends_fade);
 }
 
 /* Classes tab */
-nav#sitewide li:nth-child(4) a:link {
+nav#sitewide li:nth-child(4) a:link,
+nav#sitewide li:nth-child(4) a:visited {
 	.tab_background(@tab_classes);
 }
 
+nav#sitewide li:nth-child(4).active a:link,
+nav#sitewide li:nth-child(4).active a:visited,
 nav#sitewide li:nth-child(4) a:hover {
 	.tab_hover_background(@tab_classes);
 }
 
-nav#sitewide li:nth-child(4).notification a:link {
+nav#sitewide li:nth-child(4).notification a:link,
+nav#sitewide li:nth-child(4).notification a:visited {
 	.tab_background(@tab_classes_fade);
 }
 
+nav#sitewide li:nth-child(4).notification.active a:link,
+nav#sitewide li:nth-child(4).notification.active a:visited,
 nav#sitewide li:nth-child(4).notification a:hover {
 	.tab_hover_background(@tab_classes_fade);
 }
