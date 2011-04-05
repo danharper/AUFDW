@@ -75,3 +75,5 @@ input[type=submit]:hover,input[type=submit]:focus{background:-webkit-linear-grad
 #newstatus p{clear:both;overflow:hidden;}
 #newstatus label{background:url(../img/icon-pencil.png) no-repeat center 9px,-webkit-linear-gradient(#f3f3f3, #ececec);border:1px solid #e4e4e4;border-right:none;display:block;float:left;height:39px;text-indent:-9999em;width:39px;}
 #newstatus input[type=text]{background:-webkit-linear-gradient(#fcfcfc, #f4f4f4);border:1px solid #e4e4e4;float:left;padding:12px 10px;width:618px;font-family:"Lucida Grande" sans-serif;color:#6c6c6c;font-size:11px;line-height:15px;}#newstatus input[type=text]:focus{outline:none;}
+#kittenphonic{text-align:center;font-size:30px;margin:0 0 15px;}
+#kittenphonic+p{margin:0 0 30px;text-align:center;line-height:1.4em;color:#666;}
