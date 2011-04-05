@@ -67,6 +67,10 @@ input[type=submit]:hover,input[type=submit]:focus{background:-webkit-linear-grad
 #newsfeed li cite a:link,#newsfeed li cite a:visited{color:#4d4199;display:block;font-weight:bold;margin:0 0 3px;text-decoration:none;}
 #newsfeed li span{color:#999;display:block;font-size:11px;margin:4px 0 0;}
 #newsfeed li a:link,#newsfeed li a:visited{color:#aa9fdc;text-decoration:none;}
+#newsfeed li ol{margin:20px 0 0 20px;}
+#newsfeed li li{background:#f6f6f6;border:none;margin:0 0 5px;padding:5px;list-style:none;}#newsfeed li li img{width:40px;}
+#newsfeed li li cite{display:inline-block;float:left;margin-right:5px;}
+#newsfeed li li:last-child{margin:0;}
 #newstatus{margin:0 0 20px;}
 #newstatus p{clear:both;overflow:hidden;}
 #newstatus label{background:url(../img/icon-pencil.png) no-repeat center 9px,-webkit-linear-gradient(#f3f3f3, #ececec);border:1px solid #e4e4e4;border-right:none;display:block;float:left;height:39px;text-indent:-9999em;width:39px;}
