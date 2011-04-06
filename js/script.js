@@ -108,4 +108,9 @@ $(function() {
 		return false;
 	});
 
+	$('#chat a').click(function() {
+		alert("Chat functionality isn't implemented in the prototype.");
+		return false;
+	});
+
 });
