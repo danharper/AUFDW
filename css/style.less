@@ -1,3 +1,9 @@
+@width_body: 840px;
+@width_tabs: 80px;
+@width_main: 680px;
+@width_content: 460px;
+@width_sidebar: 200px;
+
 html {
 	background: url(../img/bg-head.png) repeat-x,
 							url(../img/bg-body.png) repeat;
@@ -5,7 +11,7 @@ html {
 
 body {
 	margin: 0 auto;
-	width: 840px;
+	width: @width_body;
 	font-family: "Lucida Grande", sans-serif;
 }
 
@@ -67,7 +73,7 @@ body > header img {
 nav#sitewide {
 	float: left;
 	margin: 40px 0 0;
-	width: 80px;
+	width: @width_tabs;
 }
 
 nav#sitewide a:link,
@@ -215,7 +221,12 @@ nav#sitewide li:nth-child(4).notification a:hover {
 	min-height: 380px;
 	float: left;
 	padding: 40px;
-	width: 680px;
+	width: @width_main;
+}
+
+#maincontent {
+	float: left;
+	width: @width_content;
 }
 
 
@@ -565,7 +576,7 @@ input[type=submit]:focus {
 	border: 1px solid #e4e4e4;
 	float: left;
 	padding: 12px 10px;
-	width: 618px;
+	width: 398px;
 	font-family: "Lucida Grande" sans-serif;
 	color: #6c6c6c;
 	font-size: 11px;
@@ -592,4 +603,19 @@ input[type=submit]:focus {
 	text-align: center;
 	line-height: 1.4em;
 	color: #666;
+}
+
+
+
+/**
+ * Sidebar
+ */
+#main > aside {
+	background: pink;
+	width: @width_sidebar;
+	float: right;
+	ul {
+		list-style: none;
+		margin: 0;
+	}
 }
