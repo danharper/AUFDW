@@ -52,7 +52,7 @@ body > header h2 {
 	text-shadow: 1px 1px 1px #2b2170;
 
 	&.profile {
-		margin-left: 175px;
+		margin-left: 250px;
 	}
 }
 
@@ -62,7 +62,9 @@ body > header img {
 	margin: 0 0 0 120px;
 	position: absolute;
 	top: 50px;
-	width: 40px;
+	width: 120px;
+	-webkit-transform: rotate(-3deg);
+	margin: -10px 0 0 100px;
 }
 
 
@@ -227,6 +229,53 @@ nav#sitewide li:nth-child(4).notification a:hover {
 #maincontent {
 	float: left;
 	width: @width_content;
+}
+
+
+
+/**
+ * Profile Navigation
+ */
+#profilewide ul {
+	background: #f4f4f4;
+	border-radius: 5px;
+	border-bottom-right-radius: 0;
+	margin: -40px -40px 15px;
+	padding: 10px 0 10px 170px;
+
+	li {
+		display: inline-block;
+
+		a:link, a:visited {
+			background: -webkit-linear-gradient(#eee, #e4e4e4);
+			color: #444;
+			margin: -10px 0;
+			padding: 10px;
+			text-decoration: none;
+		}
+
+		a:hover, a:focus {
+			background: -webkit-linear-gradient(#e4e4e4, #eee);
+		}
+
+		&.current a:link, &.current a:visited {
+			background: -webkit-linear-gradient(#e4e4e4, #eee);
+			box-shadow: inset 0 3px 0 #c0c0c0;
+		}
+
+		&:last-child {
+			float: right;
+			margin-right: 40px;
+
+			a:link, a:visited {
+				background: transparent;
+			}
+
+			a:hover, a:focus {
+				background: -webkit-linear-gradient(#e4e4e4, #eee);
+			}
+		}
+	}
 }
 
 
