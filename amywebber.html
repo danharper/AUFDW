@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en"> 
+<head> 
+	<meta charset="utf-8">
+	<title>UPSN Social Network</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head> 
+<body>
+
+	<header>
+		<section id="sitebar">
+			<h1><a href="/">UPSN</a></h1>
+		</section>
+		<img src="img/profiles/amywebber.jpg" alt="Amy's profile picture">
+		<h2 class="profile">Amy Webber</h2>
+	</header>
+
+	<nav id="sitewide">
+		<ul>
+			<li><a href="index.html"><span>Profile</span></a></li>
+			<!-- <li class="notification"><a href="messages.html"><span>Messages</span><em>2</em></a></li> -->
+			<li><a href="messages.html"><span>Messages</span></a></li>
+			<li class="notification active"><a href="friends.html"><span>Friends</span><em>1</em></a></li>
+			<!-- <li class="active"><a href="friends.html"><span>Friends</span></a></li> -->
+			<!-- <li class="notification"><a href="classes.html"><span>Classes</span><em>1</em></a></li> -->
+			<li><a href="classes.html"><span>Classes</span></a></li>
+		</ul>
+	</nav>
+
+	<section id="main">
+		<div id="maincontent">
+		
+			<form id="newstatus" action="kitten.html" method="post">
+				<p>
+					<label for="message">Message:</label>
+					<input type="text" name="message" id="message" placeholder="Write on Amy's wall&hellip;">
+				</p>
+				<p class="submit">
+					<a href="#">Cancel</a>
+					<input type="submit" value="Share">
+				</p>
+			</form>
+
+			<ol id="newsfeed">
+				<li>
+					<img src="img/profiles/amywebber.jpg" alt="Profile picture of Amy Webber">
+					<cite><a href="amywebber.html">Amy Webber</a></cite>
+					<blockquote>
+						Well that was a paw in the flan!
+					</blockquote>
+					<span>
+						<time datetime="2011-04-05T14:04Z">29 seconds ago</time>
+						· <a href="#">Like</a>
+						· <a href="#">Comment</a>
+					</span>
+				</li>
+
+				<li>
+					<img src="img/profiles/danharper.jpg" alt="Profile picture of Dan Harper">
+					<cite><a href="danharper.html">Dan Harper</a></cite>
+					<blockquote>
+						I don't think I have a favourite colour&hellip; Ooh maybe it's red!
+					</blockquote>
+					<span>
+						<time datetime="2011-04-05T14:04Z">1 hour ago</time>
+						· <a href="#">Like</a>
+						· <a href="#">Comment</a>
+					</span>
+				</li>
+
+				<li>
+					<img src="img/profiles/amywebber.jpg" alt="Profile picture of Amy Webber">
+					<cite><a href="amywebber.html">Amy Webber</a></cite>
+					<blockquote>
+						Well that was a paw in the flan!
+					</blockquote>
+					<span>
+						<time datetime="2011-04-05T14:04Z">29 seconds ago</time>
+						· <a href="#">Like</a>
+						· <a href="#">Comment</a>
+					</span>
+				</li>
+
+				<li>
+					<img src="img/profiles/jakeclements.jpg" alt="Profile picture of Jake Clements">
+					<cite><a href="jakeclements.html">Jake Clements</a></cite>
+					<blockquote>
+						Herp derp.
+					</blockquote>
+					<span>
+						<time datetime="2011-04-05T14:04Z">1 hour ago</time>
+						· <a href="#">Like</a>
+						· <a href="#">Comment</a>
+					</span>
+
+					<ol>
+						<li>
+							<img src="img/profiles/danharper.jpg" alt="Profile picture of Dan Harper">
+							<cite><a href="danharper.html">Dan Harper</a></cite>
+							<blockquote>
+								Well, that's just like, your opinion, man.
+							</blockquote>
+							<span>
+								<time datetime="2011-04-05T14:04Z">1 hour ago</time>
+								· <a href="#">Like</a>
+							</span>
+						</li>
+
+						<li>
+							<img src="img/profiles/amywebber.jpg" alt="Profile picture of Amy Webber">
+							<cite><a href="amywebber.html">Amy Webber</a></cite>
+							<blockquote>
+								I'm a little teapot.
+							</blockquote>
+							<span>
+								<time datetime="2011-04-05T14:04Z">1 hour ago</time>
+								· <a href="#">Like</a>
+							</span>
+						</li>
+					</ol>
+				</li>
+
+				<li>
+					<img src="img/profiles/danharper.jpg" alt="Profile picture of Dan Harper">
+					<cite><a href="danharper.html">Dan Harper</a></cite>
+					<blockquote>
+						Well, that's just like, your opinion, man.
+					</blockquote>
+					<span>
+						<time datetime="2011-04-05T14:04Z">1 hour ago</time>
+						· <a href="#">Like</a>
+						· <a href="#">Comment</a>
+					</span>
+				</li>
+			</ol>
+		</div>
+
+		<aside>
+			<div class="module">
+				<h3>Today's Timetable</h3>
+				<ul>
+					<li><span>11:00 - 12:00</span> WCSP <span>@ BK 2.01</span></li>
+					<li><span>12:00 - 13:00</span> WEPM <span>@ LG 0.14</span></li>
+					<li><span>16:00 - 18:00</span> WCSP <span>@ BK 2.01</span></li>
+				</ul>
+			</div>
+
+			<div class="module">
+				<h3>Upcoming Deadlines</h3>
+				<ul>
+					<li><span>12/07</span> WCSP Coursework Handin</li>
+					<li><span>13/07</span> WEPM Exam</li>
+					<li><span>19/07</span> AUFDW Group Demonstration</li>
+				</ul>
+			</div>
+
+			<div class="module">
+				<h3>Instant Chat <span>(6 friends online)</span></h3>
+				<ul id="chat">
+					<li><a href="#"><img src="img/profiles/danharper.jpg"> Dan Harper</a></li>
+					<li><a href="#"><img src="img/profiles/amywebber.jpg"> Tom Ardern</a></li>
+					<li><a href="#"><img src="img/profiles/amywebber.jpg"> Chris Warren</a></li>
+					<li><a href="#"><img src="img/profiles/jakeclements.jpg"> Mike Rogers</a></li>
+					<li><a href="#"><img src="img/profiles/danharper.jpg"> Jesus</a></li>
+					<li><a href="#"><img src="img/profiles/jakeclements.jpg"> Hey Zeus!</a></li>
+				</ul>
+			</div>
+		</aside>
+
+	</section>
+	
+
+	<!-- Get jQuery from Google CDN -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.js"></script>
+	<!-- If CDN fails, use local copy of jQuery -->
+	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.5.2.min.js"%3E%3C/script%3E'))</script>
+	<script src="js/script.js"></script>
+</body>
+</html>
