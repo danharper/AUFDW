@@ -3,7 +3,7 @@ body{margin:0 auto;width:940px;font-family:"Lucida Grande",sans-serif;}
 #sitebar{background:#504488;border-bottom-left-radius:3px;border-bottom-right-radius:3px;padding:4px 10px;}
 #sitebar a:link,#sitebar a:visited{color:#ada5e3;text-decoration:none;text-shadow:1px 1px 1px rgba(43, 33, 112, 0.5);}
 body>header{overflow:hidden;}
-body>header h2{color:#fff;font-family:"Helvetica Neue",sans-serif;font-size:32px;font-weight:600;margin:25px 0 25px 120px;text-shadow:1px 1px 1px #2b2170;}body>header h2.profile{margin-left:250px;}
+body>header h2{color:#fff;font-family:"Helvetica Neue",sans-serif;font-size:32px;font-weight:600;margin:25px 0 25px 120px;text-shadow:1px 1px 1px #2b2170;}body>header h2.profile{margin-left:250px;}body>header h2.profile span{color:#ccc;font-size:16px;font-weight:normal;margin-left:5px;vertical-align:middle;}
 body>header img{box-shadow:0 0 5px #2f2476;margin:0 0 0 120px;position:absolute;top:50px;width:120px;-webkit-transform:rotate(-3deg);margin:-10px 0 0 100px;}
 nav#sitewide{float:left;margin:40px 0 0;width:80px;}
 nav#sitewide a:link,nav#sitewide a:visited{background:-webkit-linear-gradient(#7d75a1, #aa9fdc);border-top-left-radius:5px;border-bottom-left-radius:5px;box-shadow:inset 0 0 18px rgba(66, 66, 66, 0.4);display:block;height:80px;margin:0 0 20px;overflow:hidden;position:relative;text-decoration:none;width:80px;}
