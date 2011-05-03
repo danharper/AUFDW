@@ -28,8 +28,8 @@ nav#sitewide li:nth-child(4).notification.active a:link,nav#sitewide li:nth-chil
 #profilewide ul{background:#f4f4f4;border-radius:5px;border-bottom-right-radius:0;margin:-40px -40px 15px;padding:10px 0 10px 170px;}#profilewide ul li{display:inline-block;}#profilewide ul li a:link,#profilewide ul li a:visited{background:-webkit-linear-gradient(#eeeeee, #e4e4e4);color:#444;margin:-10px 0;padding:10px;text-decoration:none;}
 #profilewide ul li a:hover,#profilewide ul li a:focus{background:-webkit-linear-gradient(#e4e4e4, #eeeeee);}
 #profilewide ul li.current a:link,#profilewide ul li.current a:visited{background:-webkit-linear-gradient(#e4e4e4, #eeeeee);box-shadow:inset 0 3px 0 #c0c0c0;}
-#profilewide ul li:last-child{float:right;margin-right:40px;}#profilewide ul li:last-child a:link,#profilewide ul li:last-child a:visited{background:transparent;}
-#profilewide ul li:last-child a:hover,#profilewide ul li:last-child a:focus{background:-webkit-linear-gradient(#e4e4e4, #eeeeee);}
+#profilewide ul li:last-child{float:right;margin-right:40px;}#profilewide ul li:last-child a:link,#profilewide ul li:last-child a:visited{background:-webkit-linear-gradient(#ffffff, #eeeeee);border:1px solid #e9e9e9;border-radius:5px;padding:5px 10px;}
+#profilewide ul li:last-child a:hover,#profilewide ul li:last-child a:focus{background:-webkit-linear-gradient(#eeeeee, #ffffff);}
 #composemail p{clear:both;}
 #composemail label{background:url(../img/icon-person.png) no-repeat center 9px,-webkit-linear-gradient(#f3f3f3, #ececec);border:1px solid #e4e4e4;border-right:none;display:block;float:left;height:39px;text-indent:-9999em;width:39px;}
 #composemail .compose input{cursor:pointer;}
@@ -91,3 +91,15 @@ input[type=submit]:hover,input[type=submit]:focus{background:-webkit-linear-grad
 #main>aside li a:hover{background:-webkit-linear-gradient(#fafafa, #eeeeee);outline:1px solid #e9e9e9;}
 #main>aside #chat li{margin:0;}
 #main>aside h3{margin:0 0 10px;}#main>aside h3 span{color:#666;font-size:10px;}
+.photos figure{width:149px;float:left;margin:0 8px 15px 0;border:1px solid #ddd;padding:5px;}
+.photos figure:nth-child(3n){margin-right:0;}
+.information h2{font-size:18px;margin:4px 0 10px;}
+.information ul{margin:0;}
+.information li{font-size:12px;color:#444;list-style:none;font-weight:normal;margin-bottom:10px;padding-left:20px;background:no-repeat 0px 0px;}
+.information #location{background-image:url(../img/information/location.png);}
+.information #lover{background-image:url(../img/information/heart.png);}
+.information #from{background-image:url(../img/information/world.png);}
+.information #born{background-image:url(../img/information/birthday.png);}
+.information #job{background-image:url(../img/information/work.png);}
+.information #course{background-image:url(../img/information/course.png);}
+.information #university{background-image:url(../img/information/uni.png);}
