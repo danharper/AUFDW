@@ -25,7 +25,7 @@ nav#sitewide li:nth-child(4) a:link,nav#sitewide li:nth-child(4) a:visited{backg
 nav#sitewide li:nth-child(4).active a:link,nav#sitewide li:nth-child(4).active a:visited,nav#sitewide li:nth-child(4) a:hover{background:url("../img/tab-classes.png") no-repeat center 16px #aba0dd;}
 nav#sitewide li:nth-child(4).notification a:link,nav#sitewide li:nth-child(4).notification a:visited{background:url("../img/tab-classes-fade.png") no-repeat center 16px,-webkit-linear-gradient(#7d75a1, #aa9fdc);}
 nav#sitewide li:nth-child(4).notification.active a:link,nav#sitewide li:nth-child(4).notification.active a:visited,nav#sitewide li:nth-child(4).notification a:hover{background:url("../img/tab-classes-fade.png") no-repeat center 16px #aba0dd;}
-#main{background:#fff;border-radius:5px;min-height:380px;float:left;padding:40px;width:780px;}
+#main,#loginmain{background:#fff;border-radius:5px;box-shadow:0 2px 0 #ddd;min-height:380px;float:left;padding:40px;width:780px;}
 #maincontent{float:left;width:500px;}
 #profilewide ul{background:#f4f4f4;border-radius:5px;border-bottom-right-radius:0;margin:-40px -40px 15px;padding:10px 0 10px 170px;}#profilewide ul li{display:inline-block;}#profilewide ul li a:link,#profilewide ul li a:visited{background:-webkit-linear-gradient(#eeeeee, #e4e4e4);color:#444;margin:-10px 0;padding:10px;text-decoration:none;}
 #profilewide ul li a:hover,#profilewide ul li a:focus{background:-webkit-linear-gradient(#e4e4e4, #eeeeee);}
@@ -108,3 +108,8 @@ input[type=submit]:hover,input[type=submit]:focus{background:-webkit-linear-grad
 .information #job{background-image:url(../img/information/work.png);}
 .information #course{background-image:url(../img/information/course.png);}
 .information #university{background-image:url(../img/information/uni.png);}
+#logintitle{margin:25px 0;text-align:center;}
+#loginmain{width:500px;margin:0 auto;float:none;min-height:0;box-shadow:0 2px 0 #ddd;}
+#loginmain p{margin-bottom:15px;}
+#loginmain input{background:-webkit-linear-gradient(#fcfcfc, #f4f4f4);border:1px solid #e4e4e4;padding:8px 10px;}
+#loginmain input[type="text"]{width:480px;}

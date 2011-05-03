@@ -20,6 +20,13 @@ $(function() {
 	$(toggleSubmit).hide();
 	// $('#composemail .compose').hide(); // swap round later
 
+	var singleUserTo = $('#composemail.singleuser .to');
+	var singleUserMessage = $('#composemail.singleuser .message');
+	var singleUserSubmit = $('#composemail.singleuser .submit');
+	$(singleUserTo).show();
+	$(singleUserMessage).show();
+	$(singleUserSubmit).show();
+
 	$(compose).focus(function() {
 		$(toggleCompose).hide();
 		$(toggleTo).show();

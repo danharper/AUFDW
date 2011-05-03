@@ -10,14 +10,38 @@
 
 	<header>
 		<section id="sitebar">
-			<h1><a href="/">UPSN</a></h1>
+			<h1><a href="index.html">UPSN</a></h1>
+			<form action="jakeclements.html">
+				<input type="search" placeholder="search&hellip;" results="5">
+			</form>
+			<!-- <a href="#" onclick="alert('Not Implemented.'); return false;"> -->
+				<!-- <img src="img/smallchat.png"> -->
+			<!-- </a> -->
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/danharper.jpg" alt="Chat with Dan Harper">
+			</a>
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/amywebber.jpg" alt="Chat with Amy Webber">
+			</a>
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/jakeclements.jpg" alt="Chat with Jake Clements">
+			</a>
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/danharper.jpg" alt="Chat with God">
+			</a>
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/amywebber.jpg" alt="Chat with Morgan Freeman">
+			</a>
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/jakeclements.jpg" alt="Chat with Osama bin Laden">
+			</a>
 		</section>
-		<h2>Mail</h2>
+		<h2>Messages</h2>
 	</header>
 
 	<nav id="sitewide">
 		<ul>
-			<li><a href="index.html"><span>Profile</span></a></li>
+			<li><a href="index.html"><span>Live Wall</span></a></li>
 			<li class="notification active"><a href="messages.html"><span>Messages</span><em>2</em></a></li>
 			<!-- <li class="active"><a href="messages.html"><span>Messages</span></a></li> -->
 			<!-- <li class="notification"><a href="friends.html"><span>Friends</span><em>9</em></a></li> -->
@@ -29,7 +53,7 @@
 
 	<section id="main">
 		<div id="maincontent">
-		<form id="composemail" action="kitten.html" method="post" class="clearfix">
+		<form id="composemail" method="post" class="clearfix" onsubmit="alert('Message sent.');">
 			<p class="compose">
 				<label for="compose">Compose:</label>
 				<input type="text" name="compose" id="compose" placeholder="Send a new message&hellip;">

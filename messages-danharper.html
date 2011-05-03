@@ -36,46 +36,43 @@
 				<img src="img/profiles/jakeclements.jpg" alt="Chat with Osama bin Laden">
 			</a>
 		</section>
-		<img src="img/profiles/danharper-l.jpg" alt="Dan's profile picture">
-		<h2 class="profile">Dan Harper <span>Web Technologies</span></h2>
+		<h2>Messages</h2>
 	</header>
 
 	<nav id="sitewide">
 		<ul>
 			<li><a href="index.html"><span>Live Wall</span></a></li>
-			<!-- <li class="notification"><a href="messages.html"><span>Messages</span><em>2</em></a></li> -->
-			<li><a href="messages.html"><span>Messages</span></a></li>
-			<li class="notification active"><a href="friends.html"><span>Friends</span><em>1</em></a></li>
-			<!-- <li class="active"><a href="friends.html"><span>Friends</span></a></li> -->
+			<li class="notification active"><a href="messages.html"><span>Messages</span><em>2</em></a></li>
+			<!-- <li class="active"><a href="messages.html"><span>Messages</span></a></li> -->
+			<!-- <li class="notification"><a href="friends.html"><span>Friends</span><em>9</em></a></li> -->
+			<li><a href="friends.html"><span>Friends</span></a></li>
 			<!-- <li class="notification"><a href="classes.html"><span>Classes</span><em>1</em></a></li> -->
 			<li><a href="classes.html"><span>Classes</span></a></li>
 		</ul>
 	</nav>
 
 	<section id="main">
-
-		<nav id="profilewide">
-			<ul>
-				<li><a href="danharper.html">Wall</a></li>
-				<li class="current"><a href="danharper-info.html">Info</a></li>
-				<li><a href="danharper-photos.html">Photos</a></li>
-				<li><a href="messages-danharper.html">Send Message</a></li>
-			</ul>
-		</nav>
-
 		<div id="maincontent">
-			<section class="information">
-				<h2>About Dan</h2>
-				<ul>
-					<li id="lover">In a relationship with <a href="#">God</a>.</li>
-					<li id="course">Studying <a href="#">Web Technologies</a>, School of Computing.</li>
-					<li id="job">Web Developer at <a href="#">RadWeb</a>.</li>
-					<!-- <li id="university">At Uni. Portsmouth</li> -->
-					<li id="location">Lives in Southsea, Portsmouth.</li>
-					<li id="from">From Stourport, Worcestershire</li>
-					<li id="born">Born on 19 July 1991.</li>
-				</ul>    
-			</section>
+		<form id="composemail" class="singleuser" method="post" class="clearfix" onsubmit="alert('Message sent.');">
+			<div class="to">
+				<label for="to">To:</label>
+				<div class="recipients">
+					<div>
+						<span>Dan Harper</span>
+					</div>
+					<input type="text" name="to" id="to" value="">
+				</div><!-- .recipients -->
+			</div>
+			<p class="message">
+				<label for="message">Message:</label>
+				<textarea name="message" id="message" autofocus></textarea>
+			</p>
+			<p class="submit">
+				<a href="#">Cancel</a>
+				<input type="submit" value="Send">
+			</p>
+		</form>
+
 		</div>
 
 		<aside>

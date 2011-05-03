@@ -10,15 +10,40 @@
 
 	<header>
 		<section id="sitebar">
-			<h1><a href="/">UPSN</a></h1>
+			<h1><a href="index.html">UPSN</a></h1>
+			<form action="jakeclements.html">
+				<input type="search" placeholder="search&hellip;" results="5">
+			</form>
+			<!-- <a href="#" onclick="alert('Not Implemented.'); return false;"> -->
+				<!-- <img src="img/smallchat.png"> -->
+			<!-- </a> -->
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/danharper.jpg" alt="Chat with Dan Harper">
+			</a>
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/amywebber.jpg" alt="Chat with Amy Webber">
+			</a>
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/jakeclements.jpg" alt="Chat with Jake Clements">
+			</a>
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/danharper.jpg" alt="Chat with God">
+			</a>
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/amywebber.jpg" alt="Chat with Morgan Freeman">
+			</a>
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/jakeclements.jpg" alt="Chat with Osama bin Laden">
+			</a>
 		</section>
+
 		<img src="img/profiles/amywebber.jpg" alt="Amy's profile picture">
 		<h2 class="profile">Amy Webber <span>TV &amp; Video Broadcasting</span></h2>
 	</header>
 
 	<nav id="sitewide">
 		<ul>
-			<li><a href="index.html"><span>Profile</span></a></li>
+			<li><a href="index.html"><span>Live Wall</span></a></li>
 			<!-- <li class="notification"><a href="messages.html"><span>Messages</span><em>2</em></a></li> -->
 			<li><a href="messages.html"><span>Messages</span></a></li>
 			<li class="notification active"><a href="friends.html"><span>Friends</span><em>1</em></a></li>
@@ -35,13 +60,13 @@
 				<li class="current"><a href="amywebber.html">Wall</a></li>
 				<li><a href="amywebber-info.html">Info</a></li>
 				<li><a href="amywebber-photos.html">Photos</a></li>
-				<li><a href="#">Send Message</a></li>
+				<li><a href="messages-amywebber.html">Send Message</a></li>
 			</ul>
 		</nav>
 
 		<div id="maincontent">
 		
-			<form id="newstatus" action="kitten.html" method="post">
+			<form id="newstatus" method="post" onsubmit="alert('Message posted to wall.');">
 				<p>
 					<label for="message">Message:</label>
 					<input type="text" name="message" id="message" placeholder="Write on Amy's wall&hellip;">
@@ -150,12 +175,12 @@
 			<div class="module">
 				<h3>You and Amy</h3>
 				<div class="images">
-					<img src="img/profiles/danharper-l.jpg">
-					<img src="img/photos/kitten.jpeg">
-					<img src="img/photos/dog.png" class="thirdandshit">
-					<img src="img/profiles/danharper-l.jpg">
-					<img src="img/photos/kitten.jpeg">
-					<img src="img/photos/dog.png" class="thirdandshit">
+					<img src="img/profiles/danharper-l.jpg" alt="Epic night out">
+					<img src="img/photos/kitten.jpeg" alt="Kittentronic">
+					<img src="img/photos/dog.png" class="thirdandshit" alt="Aww doggies">
+					<img src="img/profiles/danharper-l.jpg" alt="Halloween">
+					<img src="img/photos/kitten.jpeg" alt="Kittenchronic">
+					<img src="img/photos/dog.png" class="thirdandshit" alt="Final image woah">
 					<p><a href="#">Attending 3 Events Together</a></p>
 				</div>
 			</div>
@@ -173,10 +198,10 @@
 			<div class="module">
 				<h3>People You May Know</h3>
 				<ul id="chat">
-					<li><a href="#"><img src="img/profiles/amywebber.jpg"> Barack Obama</a></li>
-					<li><a href="#"><img src="img/profiles/danharper.jpg"> Dan Harper</a></li>
-					<li><a href="#"><img src="img/profiles/jakeclements.jpg"> Osama bin Laden</a></li>
-					<li><a href="#"><img src="img/profiles/danharper.jpg"> Zeus, The Almighty</a></li>
+					<li><a href="#"><img src="img/profiles/amywebber.jpg" alt=""> Barack Obama</a></li>
+					<li><a href="#"><img src="img/profiles/danharper.jpg" alt=""> Dan Harper</a></li>
+					<li><a href="#"><img src="img/profiles/jakeclements.jpg" alt=""> Osama bin Laden</a></li>
+					<li><a href="#"><img src="img/profiles/danharper.jpg" alt=""> Zeus, The Almighty</a></li>
 				</ul>
 			</div>
 		</aside>

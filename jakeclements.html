@@ -10,7 +10,31 @@
 
 	<header>
 		<section id="sitebar">
-			<h1><a href="/">UPSN</a></h1>
+			<h1><a href="index.html">UPSN</a></h1>
+			<form action="jakeclements.html">
+				<input type="search" placeholder="search&hellip;" results="5">
+			</form>
+			<!-- <a href="#" onclick="alert('Not Implemented.'); return false;"> -->
+				<!-- <img src="img/smallchat.png"> -->
+			<!-- </a> -->
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/danharper.jpg" alt="Chat with Dan Harper">
+			</a>
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/amywebber.jpg" alt="Chat with Amy Webber">
+			</a>
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/jakeclements.jpg" alt="Chat with Jake Clements">
+			</a>
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/danharper.jpg" alt="Chat with God">
+			</a>
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/amywebber.jpg" alt="Chat with Morgan Freeman">
+			</a>
+			<a href="#" onclick="alert('Not Implemented.'); return false;">
+				<img src="img/profiles/jakeclements.jpg" alt="Chat with Osama bin Laden">
+			</a>
 		</section>
 		<img src="img/profiles/jakeclements.jpg" alt="Jake's profile picture">
 		<h2 class="profile">Jake Clements <span>Forensic Psychology</span></h2>
@@ -18,7 +42,7 @@
 
 	<nav id="sitewide">
 		<ul>
-			<li><a href="index.html"><span>Profile</span></a></li>
+			<li><a href="index.html"><span>Live Wall</span></a></li>
 			<!-- <li class="notification"><a href="messages.html"><span>Messages</span><em>2</em></a></li> -->
 			<li><a href="messages.html"><span>Messages</span></a></li>
 			<li class="notification active"><a href="friends.html"><span>Friends</span><em>1</em></a></li>
@@ -32,16 +56,16 @@
 
 		<nav id="profilewide">
 			<ul>
-				<li class="current"><a href="danharper.html">Wall</a></li>
-				<li><a href="#">Info</a></li>
-				<li><a href="#">Photos</a></li>
-				<li><a href="#">Send a Friend Request</a></li>
+				<li class="current"><a href="jakeclements.html">Wall</a></li>
+				<li><a href="jakeclements-info.html">Info</a></li>
+				<li><a href="jakeclements-photos.html">Photos</a></li>
+				<li><a href="#" onclick="alert('Friend Request Sent');">Send a Friend Request</a></li>
 			</ul>
 		</nav>
 
 		<div id="maincontent">
 		
-			<form id="newstatus" action="kitten.html" method="post">
+			<form id="newstatus" method="post" onsubmit="alert('Message posted to wall.');">
 				<p>
 					<label for="message">Message:</label>
 					<input type="text" name="message" id="message" placeholder="Write on Jake's wall&hellip;">
@@ -148,35 +172,39 @@
 
 		<aside>
 			<div class="module">
-				<h3>Today's Timetable</h3>
-				<ul>
-					<li><span>11:00 - 12:00</span> WCSP <span>@ BK 2.01</span></li>
-					<li><span>12:00 - 13:00</span> WEPM <span>@ LG 0.14</span></li>
-					<li><span>16:00 - 18:00</span> WCSP <span>@ BK 2.01</span></li>
-				</ul>
+				<h3>You and Jake</h3>
+				<div class="images">
+					<img src="img/profiles/danharper-l.jpg" alt="Epic night out">
+					<img src="img/photos/kitten.jpeg" alt="Kittentronic">
+					<img src="img/photos/dog.png" class="thirdandshit" alt="Aww doggies">
+					<img src="img/profiles/danharper-l.jpg" alt="Halloween">
+					<img src="img/photos/kitten.jpeg" alt="Kittenchronic">
+					<img src="img/photos/dog.png" class="thirdandshit" alt="Final image woah">
+					<p><a href="#">Attending 3 Events Together</a></p>
+				</div>
 			</div>
 
 			<div class="module">
-				<h3>Upcoming Deadlines</h3>
-				<ul>
-					<li><span>12/07</span> WCSP Coursework Handin</li>
-					<li><span>13/07</span> WEPM Exam</li>
-					<li><span>19/07</span> AUFDW Group Demonstration</li>
-				</ul>
-			</div>
-
-			<div class="module">
-				<h3>Instant Chat <span>(6 friends online)</span></h3>
+				<h3>Classes Together</h3>
 				<ul id="chat">
-					<li><a href="#"><img src="img/profiles/danharper.jpg"> Dan Harper</a></li>
-					<li><a href="#"><img src="img/profiles/amywebber.jpg"> Tom Ardern</a></li>
-					<li><a href="#"><img src="img/profiles/amywebber.jpg"> Chris Warren</a></li>
-					<li><a href="#"><img src="img/profiles/jakeclements.jpg"> Mike Rogers</a></li>
-					<li><a href="#"><img src="img/profiles/danharper.jpg"> Jesus</a></li>
-					<li><a href="#"><img src="img/profiles/jakeclements.jpg"> Hey Zeus!</a></li>
+					<li><a href="#">Application Usability for Desktop &hellip;</a></li>
+					<li><a href="#">Web Server and Client Programming</a></li>
+					<li><a href="#">Web Engineering and Project &hellip;</a></li>
+					<li class="older"><a href="#">Previous Classes</a></li>
+				</ul>
+			</div>
+
+			<div class="module">
+				<h3>People You May Know</h3>
+				<ul id="chat">
+					<li><a href="#"><img src="img/profiles/amywebber.jpg" alt=""> Barack Obama</a></li>
+					<li><a href="#"><img src="img/profiles/danharper.jpg" alt=""> Dan Harper</a></li>
+					<li><a href="#"><img src="img/profiles/jakeclements.jpg" alt=""> Osama bin Laden</a></li>
+					<li><a href="#"><img src="img/profiles/danharper.jpg" alt=""> Zeus, The Almighty</a></li>
 				</ul>
 			</div>
 		</aside>
+
 
 	</section>
 	

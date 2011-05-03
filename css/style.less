@@ -237,14 +237,16 @@ nav#sitewide li:nth-child(4).notification a:hover {
 /**
  * Main Content
  */
-#main {
+#main, #loginmain {
 	background: #fff;
 	border-radius: 5px;
+	box-shadow: 0 2px 0 #ddd;
 	min-height: 380px;
 	float: left;
 	padding: 40px;
 	width: @width_main;
 }
+
 
 #maincontent {
 	float: left;
@@ -824,3 +826,33 @@ input[type=submit]:focus {
 .information #job {background-image:url(../img/information/work.png);}
 .information #course {background-image:url(../img/information/course.png);}
 .information #university {background-image:url(../img/information/uni.png);}
+
+
+
+/* All the extra stuff needed. To hell with clean code! */
+#logintitle {
+	margin: 25px 0;
+	text-align: center;
+}
+
+#loginmain {
+	width: 500px;
+	margin: 0 auto;
+	float: none;
+	min-height: 0;
+	box-shadow: 0 2px 0 #ddd;
+}
+
+#loginmain p {
+	margin-bottom: 15px;
+}
+
+#loginmain input {
+	background: -webkit-linear-gradient(#FCFCFC, #F4F4F4);
+	border: 1px solid #e4e4e4;
+	padding: 8px 10px;
+}
+
+#loginmain input[type="text"] {
+	width: 480px;
+}
