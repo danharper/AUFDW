@@ -856,3 +856,87 @@ input[type=submit]:focus {
 #loginmain input[type="text"] {
 	width: 480px;
 }
+
+
+
+
+/**
+ * Friends
+ */
+#friends {
+	list-style: none;
+	margin: 0;
+}
+
+#friends li {
+	float: left;
+	margin: 0 10px 10px 0;
+	width: 245px;
+}
+
+#friends li:nth-child(even) {
+	margin-right: 0;
+}
+
+#friends li a:link,
+#friends li a:visited {
+	background: -webkit-linear-gradient(#fafafa, #f0f0f0);
+	border: 1px solid #eaeaea;
+	border-radius: 3px;
+	color: #6c6c6c;
+	display: block;
+	font-family: "Lucida Grande", sans-serif;
+	font-size: 11px;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+#friends li img {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	width: 60px;
+	height: 60px;
+}
+
+#friends li a:hover,
+#friends li a:focus {
+	/* background: -webkit-linear-gradient(#f0f0f0, #fafafa); */
+	outline: none;
+}
+
+#friends img {
+	box-shadow: 0 0 15px #f0f0f0;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+#friends cite {
+	color: #4d4199;
+	font-size: 14px;
+	font-weight: bold;
+	display: inline-block;
+	margin: 10px 0 5px;
+}
+
+#friends span {
+	color: #666;
+	display: block;
+	font-size: 10px;
+	font-style: italic;
+}
+
+#upcomingdeadlines, #upcomingclasses {
+	margin: 0 0 30px;
+
+	h3 {
+		font-size: 15px;
+		margin: 0 0 5px;
+	}
+
+	span {
+		font-weight: bold;
+		color: #666;
+		margin: 0 5px 0 0;
+	}
+}

@@ -113,3 +113,14 @@ input[type=submit]:hover,input[type=submit]:focus{background:-webkit-linear-grad
 #loginmain p{margin-bottom:15px;}
 #loginmain input{background:-webkit-linear-gradient(#fcfcfc, #f4f4f4);border:1px solid #e4e4e4;padding:8px 10px;}
 #loginmain input[type="text"]{width:480px;}
+#friends{list-style:none;margin:0;}
+#friends li{float:left;margin:0 10px 10px 0;width:245px;}
+#friends li:nth-child(even){margin-right:0;}
+#friends li a:link,#friends li a:visited{background:-webkit-linear-gradient(#fafafa, #f0f0f0);border:1px solid #eaeaea;border-radius:3px;color:#6c6c6c;display:block;font-family:"Lucida Grande",sans-serif;font-size:11px;position:relative;overflow:hidden;text-decoration:none;}
+#friends li img{border-top-left-radius:3px;border-bottom-left-radius:3px;width:60px;height:60px;}
+#friends li a:hover,#friends li a:focus{outline:none;}
+#friends img{box-shadow:0 0 15px #f0f0f0;float:left;margin:0 10px 0 0;}
+#friends cite{color:#4d4199;font-size:14px;font-weight:bold;display:inline-block;margin:10px 0 5px;}
+#friends span{color:#666;display:block;font-size:10px;font-style:italic;}
+#upcomingdeadlines,#upcomingclasses{margin:0 0 30px;}#upcomingdeadlines h3,#upcomingclasses h3{font-size:15px;margin:0 0 5px;}
+#upcomingdeadlines span,#upcomingclasses span{font-weight:bold;color:#666;margin:0 5px 0 0;}
